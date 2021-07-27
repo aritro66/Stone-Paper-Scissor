@@ -47,15 +47,15 @@ body{
     width: 60%;
     margin: auto;
     margin-top: 1vh;
-    height: 25vh;
+    height: 22vh;
     justify-content: space-around;
     align-items: center;
     /* border: 1px solid black; */
 
 }
 #comp,#user{
-    width: 20vmin;
-    height: 20vmin;
+    width: 17vmin;
+    height: 17vmin;
     /* border: 1px solid black; */
 }
 #comp{
@@ -120,7 +120,7 @@ body{
     height: 6vh;
     text-align: center;
     padding: 1vh;
-    font-size: 3vh;
+    font-size: 2vh;
     /* border: 1px solid black; */
 
 }
