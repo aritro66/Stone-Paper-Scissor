@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* height: 100vh; */
+    width: 100vw;
+    padding: 2vmin;
+    /* box-sizing: border-box; */
+
+}
+#heading{
+    text-align: center;
+    font-family: 'Headland One', serif;
+    height: 8vh;
+    font-size: 3vmin; 
+    text-decoration: underline; 
+}
+#rules{
+    text-align: justify;
+    height: 22vh;
+    width: 95%;
+    margin: auto;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 3vmin; 
+}
+#status{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 1vh;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3vh;
+    font-family: 'Comfortaa', cursive;
+    /* line-height: 1vh; */
+    /* border: 1px solid black; */
+}
+#movement{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-top: 1vh;
+    height: 25vh;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+
+}
+#comp,#user{
+    width: 20vmin;
+    height: 20vmin;
+    /* border: 1px solid black; */
+}
+#comp{
+    background-image: url('hand_r.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#user{
+    background-image: url('fist2.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+
+#option{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 2vh;
+    height: 12vh;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+
+}
+#stone,#paper,#scissor{
+    width: 10vw;
+    height: 10vh;
+    border: 5px solid black;
+    border-radius: 3vmin;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.4),0 -10px 15px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition-duration: 0.7s;
+}
+#stone:hover,#paper:hover,#scissor:hover{
+    transition-duration: 0.7;
+    transform: scale(1.2);
+}
+
+#stone{
+    background-image: url('stone.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#paper{
+    background-image: url('paper.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#scissor{
+    background-image: url('scissor.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#move{
+    
+    width: 70%;
+    margin: auto;
+    margin-top: 1vh;
+    height: 6vh;
+    text-align: center;
+    padding: 1vh;
+    font-size: 3vh;
+    /* border: 1px solid black; */
+
+}
+.animation_comp{
+    animation-name: shake1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    transform-origin: 0 50%;
+    animation-iteration-count: infinite;
+}
+@keyframes shake1 {
+    0%{transform: rotate(0deg);}
+    20%{transform: rotate(20deg);}
+    40%{transform: rotate(-20deg);}
+    60%{transform: rotate(20deg);}
+    80%{transform: rotate(-20deg);}
+    100%{transform: rotate(0deg);}
+}
+.animation_user{
+    animation-name: shake1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    transform-origin: 100% 50%;
+    animation-iteration-count: infinite;
+}
+@keyframes shake2 {
+    0%{transform: rotate(0deg);}
+    20%{transform: rotate(20deg);}
+    40%{transform: rotate(-20deg);}
+    60%{transform: rotate(20deg);}
+    80%{transform: rotate(-20deg);}
+    100%{transform: rotate(0deg);}
+}
+#play_chk{
+    font-family: 'Oswald', sans-serif;
+    padding: 1vmin;
+    border-radius: 2vmin;
+    margin: auto;
+
+}
+#play_chk:hover{
+    transform: scale(1.2,1.2);
+}
+
