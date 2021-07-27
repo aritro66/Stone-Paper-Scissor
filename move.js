@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         chk=7-win-tie-lose;
         if(chk==0)
         {
-            if(win>lose)
+        setTimeout(()=>{
+           if(win>lose)
             {
                 move.innerHTML='User is winner!!! &#x1F60a;';
             }
@@ -31,7 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
             else
             {
                 move.innerHTML='Draw!!! &#128513;';
-            }
+            } 
+        },1300);
+            
         }
         document.getElementById('play_chk').addEventListener('click',()=>{
             clearInterval(id);
