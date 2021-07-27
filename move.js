@@ -11,11 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
     var comp=document.getElementById('comp');
     var move=document.getElementById('move');
     var chance=document.getElementById('chances');
+
+    document.getElementById('play_chk').addEventListener('click',()=>{
+        
+        location.reload();
+    });
     
     //0 - stone
     //1 - paper
     //2 - scissor
-    var id=setInterval(()=>{
+    setInterval(()=>{
         
         chk=7-win-tie-lose;
         if(chk==0)
@@ -36,10 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },1300);
             
         }
-        document.getElementById('play_chk').addEventListener('click',()=>{
-            clearInterval(id);
-            location.reload();
-        });
+        
         document.getElementById('won').innerHTML=`Win: ${win}`;
         document.getElementById('tie').innerHTML=`Tie: ${tie}`;
         document.getElementById('lose').innerHTML=`Lose: ${lose}`;
